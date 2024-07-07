@@ -1,6 +1,5 @@
-import { UserInterface } from "./user/interfaces/user-interface";
-import { User } from "./user/user";
-import { UserUtils } from "./user/user-utils";
+import { User } from "./users/user";
+import { UserInterface } from "./users/user-interface";
 
 console.log("Rodando...!");
 console.log("          ");
@@ -19,9 +18,6 @@ const user = new User(
 
 const display = (...users: UserInterface[]): void => {
   console.table(user);
-  console.log(UserUtils.getAge(user));
-  console.log("           ");
-  console.log(UserUtils.getAnnualSalary(user));
 };
 
 display();
